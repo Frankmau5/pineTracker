@@ -1,0 +1,32 @@
+name = "ELEK_DIGITAKT"
+default_channel = 1
+
+[[parameters]]
+cc = 74
+default_value = 100
+name = "FLT FREQ"
+
+[[parameters]]
+cc = 75
+default_value = 24
+name = "FLT RESO"
+
+[[parameters]]
+cc = 16
+default_value = 64
+name = "TUNE"
+
+[[parameters]]
+cc = 19
+default_value = 0
+name = "SAMPLE START"
+
+[[parameters]]
+cc = 81
+default_value = 36
+name = "OVERDRIVE"
+
+[[parameters]]
+cc = 85
+default_value = 48
+name = "DELAY SEND"

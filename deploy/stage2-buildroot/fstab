@@ -1,0 +1,7 @@
+# pineTracker Stage 2 Production OS (/etc/fstab)
+# Read-only SquashFS rootfs + synchronous /projects partition for power-off safety
+/dev/mmcblk0p2  /          squashfs  ro,defaults                0  0
+/dev/mmcblk0p1  /boot      vfat      ro,defaults                0  2
+/dev/mmcblk0p3  /projects  ext4      rw,sync,noatime,nodiratime 0  2
+tmpfs           /tmp       tmpfs     rw,nosuid,nodev,size=64M   0  0
+tmpfs           /var/log   tmpfs     rw,nosuid,nodev,size=16M   0  0

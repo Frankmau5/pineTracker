@@ -1,0 +1,29 @@
+[Unit]
+Description=pineTracker v2.0 — 8-Track Hex Music Tracker & Groovebox (PinePhone + KB151)
+After=systemd-user-sessions.service sound.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/pinetracker
+Environment="SDL_VIDEODRIVER=kmsdrm"
+Environment="SDL_NOMOUSE=0"
+Environment="PINE_TRACKER_PROJECTS_DIR=/projects"
+Environment="RUST_BACKTRACE=1"
+ExecStartPre=/usr/local/bin/pinetracker-rt-tune.sh
+ExecStart=/opt/pinetracker/pine_tracker
+Restart=on-failure
+RestartSec=2
+StandardInput=tty
+StandardOutput=journal
+StandardError=journal
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+LimitRTPRIO=99
+LimitMEMLOCK=infinity
+LimitNICE=-20
+
+[Install]
+WantedBy=multi-user.target

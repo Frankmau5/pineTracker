@@ -1,0 +1,5 @@
+/target
+/dist
+*.img
+*.img.xz
+.DS_Store

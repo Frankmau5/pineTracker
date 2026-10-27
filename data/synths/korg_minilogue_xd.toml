@@ -1,0 +1,32 @@
+name = "MINILOGUE_XD"
+default_channel = 2
+
+[[parameters]]
+cc = 43
+default_value = 90
+name = "CUTOFF"
+
+[[parameters]]
+cc = 44
+default_value = 40
+name = "RESONANCE"
+
+[[parameters]]
+cc = 36
+default_value = 64
+name = "VCO1 SHAPE"
+
+[[parameters]]
+cc = 37
+default_value = 64
+name = "VCO2 SHAPE"
+
+[[parameters]]
+cc = 22
+default_value = 52
+name = "EG INT"
+
+[[parameters]]
+cc = 26
+default_value = 45
+name = "LFO INT"

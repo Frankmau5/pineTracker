@@ -1,0 +1,32 @@
+name = "ROLAND_SH01A"
+default_channel = 0
+
+[[parameters]]
+cc = 74
+default_value = 96
+name = "VCF CUTOFF"
+
+[[parameters]]
+cc = 71
+default_value = 32
+name = "VCF RESO"
+
+[[parameters]]
+cc = 24
+default_value = 64
+name = "ENV MOD"
+
+[[parameters]]
+cc = 16
+default_value = 80
+name = "LFO RATE"
+
+[[parameters]]
+cc = 19
+default_value = 64
+name = "SUB LEVEL"
+
+[[parameters]]
+cc = 91
+default_value = 40
+name = "CHORUS/REV"
